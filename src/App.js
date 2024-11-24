@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import SideMenu from "./components/SideMenu";
 import Main from "./components/Main";
 import TestStartPage from "./components/TestStartPage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
               </>
             }
           />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </div>
