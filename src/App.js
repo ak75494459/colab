@@ -43,7 +43,6 @@ function App() {
               </>
             }
           />
-          <Route path="*" element={<Navigate to="/" />} />
           <Route
             path="/mycourse/details/testpage/6652626512727363723627asdc662525"
             element={
@@ -58,6 +57,7 @@ function App() {
               </>
             }
           />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </div>
