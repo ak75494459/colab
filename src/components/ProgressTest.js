@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function ProgressTest() {
   // Initialize state for seconds
   const [seconds, setSeconds] = useState(60);
+  const navigate = useNavigate()
 
   // Countdown logic
   useEffect(() => {
@@ -21,12 +22,17 @@ export default function ProgressTest() {
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []); // Only run once on mount
 
-  const navigate= useNavigate();
+
+  
+
+  
   useEffect(() => {
     if (seconds === 0) {
-      navigate("https://neocolab-test.onrender.com") 
+      navigate("/mycourse/details/testpage/6652626512727363723627asdc662525")
     }
+   
   }, [seconds]);
+
 
   return (
     <>
