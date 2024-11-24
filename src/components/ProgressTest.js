@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ProgressTest() {
   // Initialize state for seconds
@@ -19,6 +20,13 @@ export default function ProgressTest() {
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []); // Only run once on mount
+
+  const navigate= useNavigate();
+  useEffect(() => {
+    if (seconds === 0) {
+      navigate("https://neocolab-test.onrender.com") 
+    }
+  }, [seconds]);
 
   return (
     <>
