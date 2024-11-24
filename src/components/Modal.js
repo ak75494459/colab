@@ -35,9 +35,7 @@ export default function Modal({ onClose }) {
 
   const intervalRefs = useRef([]);
 
-  function SecurityCheck() {
-    setHide(false);
-  }
+  
 
   function Progress() {
     setHideSecond(false);
@@ -46,7 +44,7 @@ export default function Modal({ onClose }) {
   useEffect(() => {
     // Start the intervals only when 'accept' changes to false
     if (!accept) {
-      intervalRefs.current.push(setInterval(SecurityCheck, 1000));
+    
       intervalRefs.current.push(setInterval(Progress, 2000));
     }
 
@@ -63,7 +61,7 @@ export default function Modal({ onClose }) {
       return <Instruction accept={accept} setAccept={setAccept} />;
     }
     if (hide) {
-      return <EnvironmentInfo />;
+      return <EnvironmentInfo setHide={setHide} />;
     }
     if (hideSecond) {
       return <CheckSecurity />;
