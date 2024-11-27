@@ -4,7 +4,7 @@ export default function CodeIDE() {
   return (
     <div
       className="w-[60%] m-2 rounded-xl"
-      style={{ height: "calc(100vh - 80px)" }}
+      style={{ height: "calc(100vh - 140px)"}}
     >
       <div className="flex rounded-t-md bg-[#1E2431] items-center justify-between p-2">
         <div className="font-bold text-white text-[15px] ml-[10px]">
@@ -41,7 +41,7 @@ export default function CodeIDE() {
           </div>
         </div>
       </div>
-      <div className="code-area h-[73vh] overflow-scroll">
+      <div className="code-area h-[71vh] overflow-scroll">
         <div className="h-full flex">
           {/* Sidebar (5% width) */}
           <div className="bg-[#1E2431] rounded-es w-[5%] h-[100%]"></div>

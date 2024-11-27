@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Question1() {
   return (
-    <div className="w-[35%] m-2" style={{ height: "calc(100vh - 80px)" }}>
+    <div className="w-[35%] m-2" style={{height: "calc(100vh - 140px)" }}>
       <div className="bg-[#EAEEFF] w-full flex justify-between  p-2 rounded-t-md">
         <div className="text-[#666666]">
           <strong>Question No : 1 / 2</strong>
@@ -24,7 +24,7 @@ export default function Question1() {
           </svg>
         </div>
       </div>
-      <div className="h-[75vh] bg-[#FFFFFF] overflow-scroll ">
+      <div className="h-[74vh] bg-[#FFFFFF] overflow-scroll ">
         <div className="z-0 text-[6rem] rotate-[-45deg] fixed top-[20rem] left-[9rem] font-bold text-[#C2CCFF]">
           12312571
         </div>

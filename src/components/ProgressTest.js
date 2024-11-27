@@ -28,7 +28,7 @@ export default function ProgressTest() {
   
   useEffect(() => {
     if (seconds === 0) {
-      navigate("/mycourse/details/testpage/6652626512727363723627asdc662525")
+      navigate("/mycourse/details/testpage/mcq/6652626512727363723627asdc662525")
     }
    
   }, [seconds]);

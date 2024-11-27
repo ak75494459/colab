@@ -1,33 +1,38 @@
 import React, { useState } from "react";
 import "./css/mcq.css";
 
-export default function SideBar() {
+export default function SideBar1() {
+  // Use an array to store all the styles
+  const [styles, setStyles] = useState(Array(10).fill("notchoose"));
 
-  const [style, setStyle] = useState("not choose");
-
-  const chooseOption = () => {
-    if (style === "choose") {
-      setStyle("notchoose");
-    }
+  // Function to change the style of a button by index
+  const chooseOption = (index) => {
+    setStyles((prevStyles) => {
+      const newStyles = [...prevStyles];
+      newStyles[index] = newStyles[index] === "notchoose" ? "choose" : "notchoose";  // Toggle style
+      return newStyles;
+    });
   };
-
-  
 
   return (
     <div className="flex flex-col w-[6%] bg-[#FFFFFF] m-2 rounded" style={{ height: "calc(100vh - 140px)" }}>
-      <div className="flex">
-        <button className={`m-2 item-center justify-center w-[1.7rem] font-bold text-[12px] h-[2rem] rounded ${style}`}
-          onClick={chooseOption}>
-          1
-        </button>
-        <button
-          className={`m-2 item-center justify-center w-[1.7rem] font-bold text-[12px] h-[2rem] rounded ${style}`}
-          onClick={chooseOption}
-        >
-          2
-        </button>
-      </div>
-
+      {Array.from({ length: 5 }).map((_, rowIndex) => (
+        <div className="flex" key={rowIndex}>
+          {Array.from({ length: 2 }).map((_, colIndex) => {
+            const buttonIndex = rowIndex * 2 + colIndex;  // Calculate the correct button index
+            return (
+              <button
+                key={buttonIndex}
+                className={`m-2 bg-bg-[#F5F7FA] text-black item-center justify-center w-[1.7rem] font-bold text-[12px] h-[2rem] rounded ${styles[buttonIndex]}`}
+                onClick={() => chooseOption(buttonIndex)}
+              >
+                {buttonIndex + 1}
+              </button>
+            );
+          })}
+        </div>
+      ))}
+      
       <div className="flex-1">
         {/* Main content can go here */}
       </div>
