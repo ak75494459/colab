@@ -42,7 +42,7 @@ export default function TestHeader() {
   return (
     <>
       <div className="flex w-[100%] bg-[#F7F9FC] p-1 items-center ml-auto">
-        <div className="ml-[20px] font-bold text-[14px]">Exam name heading.....</div>
+        <div className="ml-[20px] font-bold text-[14px]">2027_CSE205_CA.....</div>
         
         <div className="w-[30%] flex item-center ml-auto mr-[10px]">
           <div className="w-full p-2 outline outline-[0.5px] outline-[#EAEAEA] m-2 rounded">

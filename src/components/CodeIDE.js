@@ -36,9 +36,7 @@ export default function CodeIDE() {
               alt="moon-symbol"
             />
           </div>
-          <div>
-            <img src="" alt="instruction svg" />
-          </div>
+          
         </div>
       </div>
       <div className="code-area h-[71vh] overflow-scroll">
