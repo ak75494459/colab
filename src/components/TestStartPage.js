@@ -327,7 +327,7 @@ export default function TestStartPage() {
               <div className="w-[20%] p-3 text-[#3456FF]">total</div>
               <div className="w-[20%] p-3">02</div>
               <div className="w-[20%] p-3">50</div>
-              <div className="w-[20%] p-3">20</div>
+              <div className="w-[20%] p-3">30</div>
             </div>
           </div>
         </div>
