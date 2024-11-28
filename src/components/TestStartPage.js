@@ -312,8 +312,15 @@ export default function TestStartPage() {
               <div className="w-[20%] ml-4 p-3">1</div>
               <div className="w-[20%] p-3">COD</div>
               <div className="w-[20%] p-3">2</div>
-              <div className="w-[20%] p-3">50</div>
+              <div className="w-[20%] p-3">60</div>
               <div className="w-[20%] p-3">20</div>
+            </div>
+            <div className="flex outline outline-[0.5px] outline-[#EAEAEA] mx-3  gap-[9%] text-[1rem] bg-[#F7F9FC]">
+              <div className="w-[20%] ml-4 p-3">1</div>
+              <div className="w-[20%] p-3">MCQ</div>
+              <div className="w-[20%] p-3">10</div>
+              <div className="w-[20%] p-3">60</div>
+              <div className="w-[20%] p-3">10</div>
             </div>
             <div className="flex outline outline-[0.5px] outline-[#EAEAEA] mx-3  gap-[9%] text-[1rem] font-bold">
               <div className="w-[20%] ml-4 p-3"></div>
