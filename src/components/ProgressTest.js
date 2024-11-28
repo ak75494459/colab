@@ -68,14 +68,20 @@ export default function ProgressTest() {
         <div className="flex outline outline-[0.5px] outline-[#EAEAEA] mx-3  gap-[9%] text-[1rem] bg-[#F7F9FC]">
           <div className="w-[25%] p-4">COD</div>
           <div className="w-[25%] p-4">2</div>
-          <div className="w-[25%] p-4">50</div>
+          <div className="w-[25%] p-4">60</div>
           <div className="w-[25%] p-4">20</div>
+        </div>
+        <div className="flex outline outline-[0.5px] outline-[#EAEAEA] mx-3  gap-[9%] text-[1rem] bg-[#F7F9FC]">
+          <div className="w-[25%] p-4">MCQ</div>
+          <div className="w-[25%] p-4">10</div>
+          <div className="w-[25%] p-4">60</div>
+          <div className="w-[25%] p-4">10</div>
         </div>
         <div className="flex outline outline-[0.5px] outline-[#EAEAEA] mx-3  gap-[9%] text-[1rem] font-bold">
           <div className="w-[25%] p-4 text-[#3456FF]">total</div>
-          <div className="w-[25%] p-4">02</div>
-          <div className="w-[25%] p-4">50</div>
-          <div className="w-[25%] p-4">20</div>
+          <div className="w-[25%] p-4">12</div>
+          <div className="w-[25%] p-4">60</div>
+          <div className="w-[25%] p-4">30</div>
         </div>
       </div>
     </>

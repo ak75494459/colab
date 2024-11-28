@@ -29,7 +29,7 @@ export default function TestStartPage() {
               <path d="M9 10h6" />
             </svg>
           </div>
-          <div className="font-bold text-white">CSE202_CA2_25 OCT_9 to 10</div>
+          <div className="font-bold text-white">CSE202_CA3_28 NOV_2 to 3</div>
         </div>
         <div className="flex gap-3 justify-center justify-center mr-10  mb-[1rem]">
           <div>
@@ -55,7 +55,7 @@ export default function TestStartPage() {
             </div>
             <div className="font-bold text-[11px]">Start Date</div>
           </div>
-          <div className="font-bold text-[#55BA45] text-[12px]">25 Oct,24</div>
+          <div className="font-bold text-[#55BA45] text-[12px]">28 Nov,24</div>
         </div>
         <div className="w-[13rem] h-[2.5rem]  rounded shadow bg-white flex justify-center items-center  justify-between px-[15px]">
           <div className="flex items-center gap-3">
@@ -68,7 +68,7 @@ export default function TestStartPage() {
             </div>
             <div className="font-bold text-[11px]">End Date</div>
           </div>
-          <div className="font-bold text-[#FF5E5B] text-[12px]">25 Oct,24</div>
+          <div className="font-bold text-[#FF5E5B] text-[12px]">28 Nov,24</div>
         </div>
         <div className="w-[13rem] h-[2.5rem]   rounded shadow bg-white flex justify-center items-center  justify-between px-[15px]">
           <div className="flex items-center gap-3">
@@ -252,12 +252,12 @@ export default function TestStartPage() {
                   <div className="flex items-center ml-[3px]">
                     <div className="w-[12px] h-[12px] rounded-[9px] bg-[#666666]"></div>
                     <h1 className="font-bold ml-[22px]">
-                      1. CSE202_26 Oct_CA 2
+                      1. CSE202_28Nov _CA 3
                     </h1>
                   </div>
                   <div className="flex ml-[3rem] text-[13px] gap-4 pb-[6px]">
-                    <div>Start : 26 Oct 24</div>
-                    <div>End : 26 Oct 24</div>
+                    <div>Start : 28 Nov 24</div>
+                    <div>End : 28 Nov 24</div>
                   </div>
                 </div>
               </div>
@@ -266,7 +266,7 @@ export default function TestStartPage() {
         </div>
         <div className="w-[65%] h-full max-lg:w-[100%] max-md:m-auto  rounded m-2">
           <div className="1 bg-[#EAEEFF] flex p-5 justify-between rounded-t-lg">
-            <h1 className="font-bold">CSE202_26 Oct_CA 2</h1>
+            <h1 className="font-bold">CSE202_28 Nov_CA 3</h1>
             <div className="flex gap-3 items-center">
               <div className="text-[#3456FF]">View Instructions</div>
               <button
@@ -298,7 +298,7 @@ export default function TestStartPage() {
           <div className="h-[30rem] outline outline-[0.5px] outline-[#EAEAEA] relative bottom-[2px]">
             <h2 className="text-center text-[11px] pt-[16px] text-[#E90F0F] items-center flex justify-center">
               <div className="h-[1px] w-[7rem] bg-[#E90F0F] opacity-10 mr-[5px]"></div>
-              Start Before: 26 Oct 24 | 11:20 AM (GMT +05:30)
+              Start Before: 28 Nov 24 | 1:30 PM (GMT +05:30)
               <div className="h-[1px] w-[7rem] bg-[#E90F0F] opacity-10 ml-[5px]"></div>
             </h2>
             <div className="flex outline outline-[0.5px] outline-[#EAEAEA] mx-3 mt-3  bg-[#EAEEFF] rounded-t font-bold ">

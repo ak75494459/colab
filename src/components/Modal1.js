@@ -31,7 +31,7 @@ export default function Modal1() {
       <div style={OVERLAY_STYLES} />
       <div style={MODAL_STYLES}>
           <div className="text-[1.2rem] m-5 font-bold flex ml-[3rem]">
-            Exam_Title
+          CSE202_28 Nov_CA 3
           </div>
         <div className="w-[90%] m-auto outline outline-[0.5px] outline-[#EAEAEA]" />
         <ProgressTest/>

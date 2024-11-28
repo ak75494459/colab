@@ -1,12 +1,48 @@
 import React from "react";
+import McqQuestion1 from "./McqQuestion1";
 
-export default function McqQuestion() {
+export default function McqQuestion({
+  clickedButtonIndex,
+  setClickedButtonIndex,
+}) {
+  const showValueWiseNumber = () => {
+    if (clickedButtonIndex === null) return null; // Handle case where no button has been clicked
+
+    return <strong>Question No: {clickedButtonIndex} / 10</strong>;
+  };
+  const showValueWiseQuestion = () => {
+    if (clickedButtonIndex === 1) {
+      return (
+        <>
+          <div>
+            The Warshall algorithm can be applied to a graph with ___________
+            edges without any issues. Note: This kind of question will be
+            helpful in clearing Infosys recruitment.
+          </div>
+        </>
+      );
+    }
+    if(clickedButtonIndex === 2){
+      return(
+        <div>
+        The Warshall algorithm can be applied to a graph with ___________
+        edges without any issues. Note: This kind of question will be
+        helpful in clearing Infosys recruitment.
+      </div>
+      )
+    }
+    return(
+      <div>
+      The Warshall algorithm can be applied to a graph with ___________
+      edges without any issues. Note: This kind of question will be
+      helpful in clearing Infosys recruitment.
+    </div>
+    )
+  };
   return (
     <div className="w-[35%] m-2" style={{ height: "calc(100vh - 140px)" }}>
       <div className="bg-[#EAEEFF] w-full flex justify-between  p-2 rounded-t-md">
-        <div className="text-[#666666]">
-          <strong>Question No : 1 / 10</strong>
-        </div>
+        <div className="text-[#666666]">{showValueWiseNumber()}</div>
         <div className="mr-[10px] w-[1.5rem] h-[1.6rem] outline outline-[o.5px] outline-[#FFAD3A] flex items-center justify-center rounded p-1 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,14 +65,10 @@ export default function McqQuestion() {
           12312571
         </div>
         <div className="m-4 z-50 text-[#666666] relative">
-          <div className="font-bold text-[20px] text-black">
+        <div className="font-bold text-[20px] text-black">
             Multi Choice Type Question
           </div>
-          <div>
-            The Warshall algorithm can be applied to a graph with ___________
-            edges without any issues. Note: This kind of question will be
-            helpful in clearing Infosys recruitment.
-          </div>
+          {showValueWiseQuestion()}
         </div>
       </div>
       <div className="bg-[#EAEEFF] w-full  flex gap-3  p-3 rounded-b-md text-[#666666] font-bold text-[15px]">

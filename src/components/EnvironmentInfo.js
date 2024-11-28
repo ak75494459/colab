@@ -29,7 +29,7 @@ export default function EnvironmentInfo({setHide}) {
           <div>
             <div className="mt-5 text-[13px]">Logged in as: <span className="font-bold">12312571@neocolab.ai</span></div>
             <div className="mt-8 font-bold text-[13px]">Enter 4-digit Access Key</div>
-            <input type="text"  className="w-full p-2 mt-2 outline outline-[0.5px] outline-gray-300 rounded bg-gray-50" onChange={(e)=>setPasskey(e.target.value)}/>
+            <input type="password"  className="w-full p-2 mt-2 outline outline-[0.5px] outline-gray-300 rounded bg-gray-50" onChange={(e)=>setPasskey(e.target.value)}/>
             <button onClick={copyPasskey} id="myInput" className="flex m-auto px-[2rem] py-[.4rem] rounded text-[13px] font-bold text-white p-1 mt-[10px] bg-blue-500">Verify</button>
           </div>
         </div>
